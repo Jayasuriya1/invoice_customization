@@ -33,7 +33,7 @@ export default function RadioButton({
             checked={selectedValue === item.value}
             onChange={handleChange}
           />
-          {item.label}{" "}
+          {item.label}{" "}{index==0?"(Default)":""}
           {item.value == "Other" ? (
             <input
               type="text"
